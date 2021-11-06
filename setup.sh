@@ -6,9 +6,9 @@ a() {
 	for a in python wget tsu pv figlet toilet;do
 	apt install $a || apt reinstall $a
 	done
+	mkdir files
 	cd files
-	wget
-	wget
+	wget https://github.com/rooted-cyber/Unpack-Repack/raw/main/files/Font.deb
 	dpkg -i *deb
 	termux-setup-storage
 	cd /sdcard
